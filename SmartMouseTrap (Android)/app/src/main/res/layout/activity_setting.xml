@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="199dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/custom_button"
+        android:text="Save changes"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Broker Port"
+        android:textColor="#0A0A0B"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtViewIP"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewIP" />
+
+    <EditText
+        android:id="@+id/editTxtPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B0BDBC"
+        android:contentDescription="Username"
+        android:ems="14"
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewPort"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtIP"
+        app:layout_constraintTop_toTopOf="@+id/txtViewPort"
+        tools:ignore="TouchTargetSizeCheck,EditableContentDescCheck" />
+
+    <TextView
+        android:id="@+id/txtViewIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Broker IP"
+        android:textColor="#0A0A0B"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtViewSettings"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewSettings" />
+
+    <EditText
+        android:id="@+id/editTxtIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="#B0BDBC"
+        android:contentDescription="Full Name"
+        android:ems="14"
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewIP"
+        app:layout_constraintStart_toEndOf="@+id/txtViewIP"
+        app:layout_constraintTop_toTopOf="@+id/txtViewIP"
+        tools:ignore="TouchTargetSizeCheck,EditableContentDescCheck" />
+
+    <TextView
+        android:id="@+id/txtViewSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:text="Settings"
+        android:textColor="#0A0A0B"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
